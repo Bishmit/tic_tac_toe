@@ -83,6 +83,10 @@ int main(){
 		while (true) {
 			system("cls");
 			display_board();
+			if(player_mark == 'X')
+			cout<<"player 1 turn:"<<endl;
+			else 
+			cout<<"player 2 turn:"<<endl;
 			get_move(row, col);
 			update_board(row, col, player_mark);
 			
